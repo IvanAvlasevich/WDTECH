@@ -1,0 +1,26 @@
+export const references = [
+  {
+    src:'../img/atrem.jpg',
+    alt:'atrem',
+  },
+  {
+    src:'../img/denotec.jpg',
+    alt:'denotec',
+  },
+  {
+    src:'../img/energotechnika-1.jpg',
+    alt:'energotechnika',
+  },
+  {
+    src:'../img/icontrol.jpg',
+    alt:'icontrol',
+  },
+  {
+    src:'../img/inabensa.jpg',
+    alt:'inabensa',
+  },
+  {
+    src:'../img/spie.jpg',
+    alt:'spie',
+  },
+];

@@ -1,0 +1,71 @@
+.wrapper{
+  display: flex;
+  align-items:center;
+}
+
+.btn{
+  cursor: pointer;
+  font-size: 100px;
+  width: 100px;
+}
+
+.item,.carousel, .card{
+  display: flex;
+}
+
+.carousel-wrapper{
+  width: 640px;
+  margin: 0 20px;
+  overflow: hidden;
+  /* чтобы прятались некоторые элементы */
+}
+
+.card{
+  width: 200px;
+  height: 200px;
+  background: red;
+  justify-content: center;
+  align-items:center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.card.activated{
+  background: #ccc;
+}
+
+.item:first-child .card{
+  background: lawngreen;
+}
+
+.item:last-child .card{
+  background:lightskyblue;
+}
+
+.item{
+  gap: 20px;
+}
+
+.carousel{
+  position: relative;
+  left: -640px;
+}
+
+@keyframes move-to-right{
+  from{left: -640px;}
+  to{left: -1280px;}
+}
+
+@keyframes move-to-left{
+  from{left: -640px;}
+  to{left: 0px;}
+}
+
+.transition-right{
+  animation-name: move-to-right;
+  animation-duration: 3s;
+}
+.transition-left{
+  animation-name: move-to-left;
+  animation-duration: 3s;
+}
